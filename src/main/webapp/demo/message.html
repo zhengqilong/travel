@@ -1,0 +1,74 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>留言</title>
+
+    <link rel="stylesheet" href="css/semantic.css" type="text/css" />
+    <link rel="stylesheet" href="css/zyComment.css" type="text/css" />
+    <style>
+        .mm{
+            position: fixed;
+            bottom: 5%;
+            right: 5%;
+            width:30px;
+            height: 30px;
+
+        }
+    </style>
+
+    <style type="text/css" media="print, screen">
+        label {
+            font-weight: bold;
+        }
+
+        a {
+            font-family: Microsoft YaHei;
+        }
+
+        #articleComment {
+            width: 600px;
+            margin:0 auto;
+        }
+    </style>
+
+</head>
+<body>
+<div id="articleComment">
+    <div class="mm">
+        <a href="index.html"><img src="images/back.png" alt="" style="width: 60px;height: 60px;"></a>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/zyComment.js"></script>
+
+<script type="text/javascript">
+
+    var agoComment = [
+        {"id":1,"userName":"游客1","time":"2018-03-16","sortID":0,"content":"第一条评论"},
+        {"id":2,"userName":"游客2","time":"2018-03-16","sortID":0,"content":"第二条评论"},
+        {"id":3,"userName":"站长","time":"2018-03-16","sortID":1,"content":"第一条评论的回复"},
+        {"id":4,"userName":"站长","time":"2018-03-16","sortID":2,"content":"第二条评论的回复"},
+        {"id":5,"userName":"游客3","time":"2018-03-16","sortID":0,"content":"第三条评论"},
+        {"id":6,"userName":"游客2","time":"2018-03-16","sortID":4,"content":"第二条评论的回复的回复"},
+    ];
+    $("#articleComment").zyComment({
+        "width":"355",
+        "height":"33",
+        "agoComment":agoComment,
+        "callback":function(comment){
+            console.info("填写内容返回值：");
+            console.info(comment);
+
+            $("#articleComment").zyComment("setCommentAfter",{"id":123, "name":"name", "content":"content", "time":"2018-03-22"});
+
+        }
+    });
+
+
+
+</script>
+
+</body>
+</html>
