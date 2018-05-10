@@ -6,7 +6,7 @@
 <head>
 
     <meta charset="utf-8">
-    <title>Apply</title>
+    <title>攻略大全</title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -36,7 +36,7 @@
 <section id="page-header">
     <div class="row current-cat">
         <div class="col-full">
-            <h1>APPLY</h1>
+            <h1>旅行攻略</h1>
         </div>
     </div>
 </section>
@@ -54,7 +54,7 @@
 
                 <div class="entry-thumb">
                     <a href="ss水墨.html" class="thumb-link" target="_blank">
-                        <img src="${ctx}/libs/images/a1.jpg" alt="building">
+                        <img src="${ctx}/libs/images/bg1.jpg" alt="building">
                     </a>
                 </div>
 
@@ -63,15 +63,15 @@
 
                         <div class="entry-meta">
                			<span class="cat-links">
-               				<a href="#">AE特效之</a>
+               				<a href="#">聆听晨钟暮鼓，探寻美味小吃</a>
                			</span>
                         </div>
 
-                        <h1 class="entry-title"><a href="#">水墨特效</a></h1>
+                        <h1 class="entry-title"><a href="#">西安钟鼓楼</a></h1>
 
                     </div>
                     <div class="entry-excerpt">
-                     《三生三世十里桃花》这部影视剧画风主要是偏古风，根据剧情以及整部电视剧画风的架构，在剧中使用的特效主要是以水墨风格为主，在后期的电视剧宣传以及海报宣传当中可以看到大多数的海报以及宣传短片都是以粉色的桃花加上水墨渲染的特效为主，使用水墨的特效手法可以将这部剧情的风格凸显的淋漓尽致。
+                        钟鼓楼在中国的古城每每有之，北京有，南京有，西安也有，不说这么大的都市，就是小小的县城只要是古已有之，则必然有钟鼓楼，我走过平遥古城，钟鼓楼赫然立在城中正中央，即使看不到钟鼓楼，那并不代表没有这么的建筑，那是因为后来由于种种原因而被毁了，但是仍然可以找寻它的足迹，往往你在一个地方看到钟楼大街，鼓楼大街一样的，往往曾经那就是钟鼓楼的所在。
                     </div>
                 </div>
 
@@ -81,7 +81,7 @@
 
                 <div class="entry-thumb">
                     <a href="#" class="thumb-link">
-                        <img src="${ctx}/libs/images/a2.jpg" alt="ferris wheel">
+                        <img src="${ctx}/libs/images/bg2.jpg" alt="ferris wheel">
                     </a>
                 </div>
 
@@ -90,16 +90,18 @@
 
                         <div class="entry-meta">
                			<span class="cat-links">
-               				<a href="#">CG特效之</a>
+               				<a href="#">云南旅游攻略</a>
 
                			</span>
                         </div>
 
-                        <h1 class="entry-title"><a href="#">流体动力学特效</a></h1>
+                        <h1 class="entry-title"><a href="#">实用版</a></h1>
 
                     </div>
                     <div class="entry-excerpt">
-                        小妖王胡巴在《捉妖记》里的形象十分可爱，这与电影中的特技场面不无关系。剧情当中每个特效人设都要进行三个阶段的测试，这3段测试主要解决的是生物角色变身的特效、生物角色与实拍演员的互动，以及画面的真实感等环节。而这些环节，对整部电影效果起到决定性作用。为了让CG角色具有更真实的情感和表现力，BASE的艺术家要参考很多素材，甚至自己揣摩角色并进行表演，同时结合流体动力学特效进行后期人物的设计。
+                        非常有幸，您看到这篇攻略（小五哥不才，但确信这是最详细、最实用的云南旅游攻略了）。
+
+                        云南旅游攻略网上现在五花八门，却没有一个认真为客人写清楚的，小五哥走遍全国各地，现根据本人摄影亲身经历，精心写此旅游攻略，希望能帮到更多想在云南玩得开心的朋友，少花冤枉钱，少走冤枉路。您有幸知道怎么选择自己的旅游方案，我也有幸让自己努力撰写的攻略得以帮助更多的人。
                     </div>
                 </div>
 
@@ -109,7 +111,7 @@
 
                 <div class="entry-thumb">
                     <a href="#" class="thumb-link">
-                        <img src="${ctx}/libs/images/a3.jpg" alt="concert">
+                        <img src="${ctx}/libs/images/bg3.jpg" alt="concert">
                     </a>
                 </div>
 
@@ -118,38 +120,56 @@
 
                         <div class="entry-meta">
                			<span class="cat-links">
-               				<a href="#">CG特效之</a>
+               				<a href="#">张家界出游之</a>
 
                			</span>
                         </div>
 
-                        <h1 class="entry-title"><a href="#">魔幻打斗特效</a></h1>
+                        <h1 class="entry-title"><a href="#">玻璃栈道</a></h1>
 
                     </div>
                     <div class="entry-excerpt">
-                        西游记题材固然离不开魔幻与打斗，那么为了更好的表现魔幻效果与打斗场面，就离不开特效。烟、火、光波、气流等，无一不与动作场面配合得天衣无缝。特别是最后孙悟空变身穿上金甲，抖出猎猎火红的披风时，让观众大呼过瘾。尤其是抽出金箍棒，打败混沌后，孙悟空右手腕上散出一绪金色烟粉的特效，让人感觉大圣已彻底挣脱符咒，真正的大圣归来了。可见，《大圣归来》的特效制作不只是为了让大场面看起来够炫，还注重每一处小细节，使观众除了饱眼福以外，还能被小细节感染，引起感情共鸣。
+                        去天门山旅游如何玩才能省钱，省心，省力？18年4月份在和朋友去张家界天门山以及玻璃栈道玩了一趟
+
+                        每人人才花费500多。费用都包含了：
+
+                        1、天门山和玻璃栈道景点门票《一定要提前预定避免排队》
+
+                        2、全程的景点交通费(非常关键)，路程较远。
+
+                        3、一晚的三星级豪华酒店
+
+                        4、还包含了吃饭用餐。
+
+                        5、全程服务费用
+
+                        个人觉得费用很划算了
+
+                        全程没有购物点，没有自费项目
+
+                        并且玩的很自由
                     </div>
                 </div>
 
             </article> <!-- /article -->
 
-            <article class="brick entry format-quote animate-this">
+            <%--<article class="brick entry format-quote animate-this">--%>
 
-                <div class="entry-thumb">
-                    <blockquote>
-                        <p>11</p>
+                <%--<div class="entry-thumb">--%>
+                    <%--<blockquote>--%>
+                        <%--<p>11</p>--%>
 
-                        <cite>11</cite>
-                    </blockquote>
-                </div>
+                        <%--<cite>11</cite>--%>
+                    <%--</blockquote>--%>
+                <%--</div>--%>
 
-            </article> <!-- end article -->
+            <%--</article> <!-- end article -->--%>
 
             <article class="brick entry format-standard animate-this">
 
                 <div class="entry-thumb">
                     <a href="#" class="thumb-link">
-                        <img src="${ctx}/libs/images/a7.jpg" alt="Shutterbug">
+                        <img src="${ctx}/libs/images/bg4.jpg" alt="Shutterbug">
                     </a>
                 </div>
 
@@ -158,16 +178,16 @@
 
                         <div class="entry-meta">
                			<span class="cat-links">
-               				<a href="#">标题</a>
+               				<a href="#">在杭州，一定要做的事</a>
              
                			</span>
                         </div>
 
-                        <h1 class="entry-title"><a href="#">标题.</a></h1>
+                        <h1 class="entry-title"><a href="#">西湖游</a></h1>
 
                     </div>
                     <div class="entry-excerpt">
-                        11
+                        逛西湖最好就是边骑边玩了，今年共享单车出现之后真的对游西湖可以省很多脚力，从断桥开始，经过白堤到平湖秋月然后再到曲院风荷这两个地方可以下车进去逛一下，从曲院风荷出来进入苏堤，挺长的，一共有6个拱桥，途中会经过花港观鱼，建议时长1个半小时，也可以停车进去逛一下，春天的话有樱花等各种各样我叫不上名字的花，这里自行车不能进去的。出来之后按照路线继续骑行就到了苏堤尽头，其实旁边有个苏轼纪念馆的，有点偏，很多人都没有留意到。春天的话，强烈建议从苏堤出来之后到马路斜对面的太子湾公园去赏一下花，春天有各种的郁金香，还有大片樱花，真的很好看，是春游的好地方。逛完太子湾，沿着雷峰塔方向骑行到雷峰塔，建议买票进去参观一下，在塔顶看到西湖全景，学生票20元，原票40。逛完雷峰塔就沿着南山路往音乐喷泉放向走，夜晚开了灯的南山路很好看！途中会经过长桥，相传是祝英台送梁山伯上京考试依依不舍的地方，还会经过柳浪闻莺，有兴趣的也可以停车进去游览一下。<%--然后还会经过中国美术学院南山校区，然后沿着南山路骑，南山路两旁也有挺多文艺的店。放好车，往音乐喷泉方向走，7点一场，8点一场。这就一天的攻略。--%>
                     </div>
                 </div>
 
@@ -177,7 +197,7 @@
 
                 <div class="entry-thumb">
                     <a href="#" class="thumb-link">
-                        <img src="${ctx}/libs/images/a8.jpg" alt="USAF rocket">
+                        <img src="${ctx}/libs/images/bg5.jpg" alt="USAF rocket">
                     </a>
                 </div>
 
@@ -186,181 +206,181 @@
 
                         <div class="entry-meta">
                			<span class="cat-links">
-               				<a href="#">粒子特效</a>
+               				<a href="#">北京最神圣美丽的地方</a>
                			</span>
                         </div>
 
-                        <h1 class="entry-title"><a href="#">标题</a></h1>
+                        <h1 class="entry-title"><a href="#">故宫</a></h1>
 
                     </div>
                     <div class="entry-excerpt">
-                      11
+                        故宫是一直向往的神圣之地，风景很美。故宫的建筑群保存得非常完好，无论是恢宏的气势、绝佳的建筑，还是深厚的历史文化底蕴都让人印象深刻。天气好的时候看得更加真切。北京故宫，旧称紫禁城，是中国明清两代24位皇帝的皇宫。是无与伦比的古代建筑杰作，也是世界现存最大、最完整的木质结构的古建筑群。 故宫宫殿建筑均是木结构、黄琉璃瓦顶、青白石底座，饰以金碧辉煌的彩画。
                     </div>
                 </div>
 
             </article> <!-- end article -->
 
-            <article class="brick entry format-gallery group animate-this">
+            <%--<article class="brick entry format-gallery group animate-this">--%>
 
-                <div class="entry-thumb">
+                <%--<div class="entry-thumb">--%>
 
-                    <div class="post-slider flexslider">
-                        <ul class="slides">
-                            <li>
-                                <img src="${ctx}/libs/images/a4.jpg">
-                            </li>
-                            <li>
-                                <img src="${ctx}/libs/images/a5.jpg">
-                            </li>
-                            <li>
-                                <img src="${ctx}/libs/images/a6.jpg">
-                            </li>
-                        </ul>
-                    </div>
+                    <%--<div class="post-slider flexslider">--%>
+                        <%--<ul class="slides">--%>
+                            <%--<li>--%>
+                                <%--<img src="${ctx}/libs/images/a4.jpg">--%>
+                            <%--</li>--%>
+                            <%--<li>--%>
+                                <%--<img src="${ctx}/libs/images/a5.jpg">--%>
+                            <%--</li>--%>
+                            <%--<li>--%>
+                                <%--<img src="${ctx}/libs/images/a6.jpg">--%>
+                            <%--</li>--%>
+                        <%--</ul>--%>
+                    <%--</div>--%>
 
-                </div>
+                <%--</div>--%>
 
-                <div class="entry-text">
-                    <div class="entry-header">
+                <%--<div class="entry-text">--%>
+                    <%--<div class="entry-header">--%>
 
-                        <div class="entry-meta">
-               			<span class="cat-links">
-               				<a href="#">标题</a>
-               			</span>
-                        </div>
+                        <%--<div class="entry-meta">--%>
+               			<%--<span class="cat-links">--%>
+               				<%--<a href="#">标题</a>--%>
+               			<%--</span>--%>
+                        <%--</div>--%>
 
-                        <h1 class="entry-title"><a href="#">11</a></h1>
+                        <%--<h1 class="entry-title"><a href="#">11</a></h1>--%>
 
-                    </div>
-                    <div class="entry-excerpt">
-                         11
-                    </div>
-                </div>
+                    <%--</div>--%>
+                    <%--<div class="entry-excerpt">--%>
+                         <%--11--%>
+                    <%--</div>--%>
+                <%--</div>--%>
 
-            </article> <!-- end article -->
+            <%--</article> <!-- end article -->--%>
 
-            <article class="brick entry format-link animate-this">
+            <%--<article class="brick entry format-link animate-this">--%>
 
-                <div class="entry-thumb">
-                    <div class="link-wrap">
-                        <p>11</p>
-                        <cite>
-                            <a target="_blank" href="#">标题</a>
-                        </cite>
-                    </div>
-                </div>
+                <%--<div class="entry-thumb">--%>
+                    <%--<div class="link-wrap">--%>
+                        <%--<p>11</p>--%>
+                        <%--<cite>--%>
+                            <%--<a target="_blank" href="#">标题</a>--%>
+                        <%--</cite>--%>
+                    <%--</div>--%>
+                <%--</div>--%>
 
-            </article> <!-- end article -->
+            <%--</article> <!-- end article -->--%>
 
 
-            <article class="brick entry animate-this">
+            <%--<article class="brick entry animate-this">--%>
 
-                <div class="entry-thumb">
-                    <a href="#" class="thumb-link">
-                        <img src="${ctx}/libs/images/a9.jpg" alt="Pattern">
-                    </a>
-                </div>
+                <%--<div class="entry-thumb">--%>
+                    <%--<a href="#" class="thumb-link">--%>
+                        <%--<img src="${ctx}/libs/images/a9.jpg" alt="Pattern">--%>
+                    <%--</a>--%>
+                <%--</div>--%>
 
-                <div class="entry-text">
-                    <div class="entry-header">
+                <%--<div class="entry-text">--%>
+                    <%--<div class="entry-header">--%>
 
-                        <div class="entry-meta">
-               			<span class="cat-links">
-               				<a href="#">标题</a>
-               			</span>
-                        </div>
+                        <%--<div class="entry-meta">--%>
+               			<%--<span class="cat-links">--%>
+               				<%--<a href="#">标题</a>--%>
+               			<%--</span>--%>
+                        <%--</div>--%>
 
-                        <h1 class="entry-title"><a href="#">标题</a></h1>
+                        <%--<h1 class="entry-title"><a href="#">标题</a></h1>--%>
 
-                    </div>
-                    <div class="entry-excerpt">
-                       11
-                    </div>
-                </div>
+                    <%--</div>--%>
+                    <%--<div class="entry-excerpt">--%>
+                       <%--11--%>
+                    <%--</div>--%>
+                <%--</div>--%>
 
-            </article> <!-- end article -->
+            <%--</article> <!-- end article -->--%>
 
-            <article class="brick entry format-video animate-this">
+            <%--<article class="brick entry format-video animate-this">--%>
 
-                <div class="entry-thumb video-image">
-                    <a href="" data-lity>
-                        <img src="${ctx}/libs/images/a11.jpg" alt="bokeh">
-                    </a>
-                </div>
+                <%--<div class="entry-thumb video-image">--%>
+                    <%--<a href="" data-lity>--%>
+                        <%--<img src="${ctx}/libs/images/a11.jpg" alt="bokeh">--%>
+                    <%--</a>--%>
+                <%--</div>--%>
 
-                <div class="entry-text">
-                    <div class="entry-header">
+                <%--<div class="entry-text">--%>
+                    <%--<div class="entry-header">--%>
 
-                        <div class="entry-meta">
-               			<span class="cat-links">
-               				<a href="#">标题</a>
-               			</span>
-                        </div>
+                        <%--<div class="entry-meta">--%>
+               			<%--<span class="cat-links">--%>
+               				<%--<a href="#">标题</a>--%>
+               			<%--</span>--%>
+                        <%--</div>--%>
 
-                        <h1 class="entry-title"><a href="#">标题</a></h1>
+                        <%--<h1 class="entry-title"><a href="#">标题</a></h1>--%>
 
-                    </div>
-                    <div class="entry-excerpt">
-                        
-                    </div>
-                </div>
+                    <%--</div>--%>
+                    <%--<div class="entry-excerpt">--%>
+                        <%----%>
+                    <%--</div>--%>
+                <%--</div>--%>
 
-            </article> <!-- end article -->
+            <%--</article> <!-- end article -->--%>
 
-            <article class="brick entry format-standard animate-this">
+            <%--<article class="brick entry format-standard animate-this">--%>
 
-                <div class="entry-thumb">
-                    <a href="#" class="thumb-link">
-                        <img src="${ctx}/libs/images/a12.jpg" alt="Lighthouse">
-                    </a>
-                </div>
+                <%--<div class="entry-thumb">--%>
+                    <%--<a href="#" class="thumb-link">--%>
+                        <%--<img src="${ctx}/libs/images/a12.jpg" alt="Lighthouse">--%>
+                    <%--</a>--%>
+                <%--</div>--%>
 
-                <div class="entry-text">
-                    <div class="entry-header">
+                <%--<div class="entry-text">--%>
+                    <%--<div class="entry-header">--%>
 
-                        <div class="entry-meta">
-               			<span class="cat-links">
-               				<a href="#">标题</a>
+                        <%--<div class="entry-meta">--%>
+               			<%--<span class="cat-links">--%>
+               				<%--<a href="#">标题</a>--%>
 
-               			</span>
-                        </div>
+               			<%--</span>--%>
+                        <%--</div>--%>
 
-                        <h1 class="entry-title"><a href="#">标题</a></h1>
+                        <%--<h1 class="entry-title"><a href="#">标题</a></h1>--%>
 
-                    </div>
-                    <div class="entry-excerpt">
-                        
-                    </div>
-                </div>
+                    <%--</div>--%>
+                    <%--<div class="entry-excerpt">--%>
+                        <%----%>
+                    <%--</div>--%>
+                <%--</div>--%>
 
-            </article> <!-- end article -->
+            <%--</article> <!-- end article -->--%>
 
-            <article class="brick entry format-standard animate-this">
+            <%--<article class="brick entry format-standard animate-this">--%>
 
-                <div class="entry-thumb">
-                    <a href="#" class="thumb-link">
-                        <img src="${ctx}/libs/images/a10.jpg" alt="Liberty">
-                    </a>
-                </div>
+                <%--<div class="entry-thumb">--%>
+                    <%--<a href="#" class="thumb-link">--%>
+                        <%--<img src="${ctx}/libs/images/a10.jpg" alt="Liberty">--%>
+                    <%--</a>--%>
+                <%--</div>--%>
 
-                <div class="entry-text">
-                    <div class="entry-header">
+                <%--<div class="entry-text">--%>
+                    <%--<div class="entry-header">--%>
 
-                        <div class="entry-meta">
-               			<span class="cat-links">
-               				<a href="#">标题</a>
-               			</span>
-                        </div>
+                        <%--<div class="entry-meta">--%>
+               			<%--<span class="cat-links">--%>
+               				<%--<a href="#">标题</a>--%>
+               			<%--</span>--%>
+                        <%--</div>--%>
 
-                        <h1 class="entry-title"><a href="#">标题</a></h1>
+                        <%--<h1 class="entry-title"><a href="#">标题</a></h1>--%>
 
-                    </div>
-                    <div class="entry-excerpt">
-                     
-                    </div>
-                </div>
+                    <%--</div>--%>
+                    <%--<div class="entry-excerpt">--%>
+                     <%----%>
+                    <%--</div>--%>
+                <%--</div>--%>
 
-            </article> <!-- end article -->
+            <%--</article> <!-- end article -->--%>
 
         </div> <!-- end brick-wrapper -->
 

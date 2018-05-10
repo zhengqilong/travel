@@ -12,7 +12,7 @@ $(document).ready(function () {
 	var diff = 0;
 
 	// Generating slides
-	var arrCities = ['Specially', 'Aaaa', 'Bbbbbb', 'Pictures', 'Messages']; // Change number of slides in CSS also
+	var arrCities = ['Specially', 'Lijiang', 'Bbbbbb', 'Pictures', 'Palace']; // Change number of slides in CSS also
 	var numOfCities = arrCities.length;
 	var arrCitiesDivided = [];
 
@@ -25,6 +25,7 @@ $(document).ready(function () {
 	});
 
 	var generateSlide = function generateSlide(city) {
+        var arrCities1 = ['钟楼', '丽江', '张家界', '西湖', '故宫']; // Change number of slides in CSS also
 		var frag1 = $(document.createDocumentFragment());
 		var frag2 = $(document.createDocumentFragment());
 		var numSlide = arrCities.indexOf(arrCities[city]) + 1;
@@ -32,10 +33,12 @@ $(document).ready(function () {
 
 		var $slide = $('<div data-target="' + numSlide + '" class="slide slide--' + numSlide + '">\n\t\t\t\t\t\t\t<div class="slide__darkbg slide--' + numSlide + '__darkbg"></div>\n\t\t\t\t\t\t\t<div class="slide__text-wrapper slide--' + numSlide + '__text-wrapper"></div>\n\t\t\t\t\t\t</div>');
 
-		var letter = $('<div class="slide__letter slide--' + numSlide + '__letter">\n\t\t\t\t\t\t\t' + firstLetter + '\n\t\t\t\t\t\t</div>');
+		// var letter = $('<div style="display: none" class="slide__letter slide--' + numSlide + '__letter">\n\t\t\t\t\t\t\t' + firstLetter + '\n\t\t\t\t\t\t</div>');
+		var letter = $('<div style="font-size: 100px;opacity: 0.5" class="slide__text slide__text--' + numSlide + '__letter">\n\t\t\t\t\t\t\t' + arrCities1[city] + '\n\t\t\t\t\t\t</div>');
+		// var letter = $('<div  class="slide__letter slide--' + numSlide + '__letter">\n\t\t\t\t\t\t\t' + arrCities1[city] + '\n\t\t\t\t\t\t</div>');
 
 		for (var i = 0, length = arrCitiesDivided[city].length; i < length; i++) {
-			var text = $('<div class="slide__text slide__text--' + (i + 1) + '">\n\t\t\t\t\t\t\t\t' + arrCitiesDivided[city][i] + '\n\t\t\t\t\t\t\t</div>');
+			var text = $('<div style="display: none"  class="slide__text slide__text--' + (i + 1) + '">\n\t\t\t\t\t\t\t\t' + arrCitiesDivided[city][i] + '\n\t\t\t\t\t\t\t</div>');
 			frag1.append(text);
 		}
 

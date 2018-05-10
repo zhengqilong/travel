@@ -25,10 +25,14 @@
 <body>
 <div class="container demo-1">
     <div class="content">
+
         <div id="large-header" class="large-header">
+
             <canvas id="demo-canvas"></canvas>
+            <%--<h1>旅游资讯网站</h1>--%>
             <div class="logo_box">
-                <h3>欢迎你</h3>
+                <h1 style="margin: auto;text-align: center">旅游资讯网站</h1>
+                <h3>${requestScope.msg}</h3>
                 <form action="${ctx}/login" name="f" method="post" id="myform">
                     <div class="input_outer">
                         <span class="u_user"></span>

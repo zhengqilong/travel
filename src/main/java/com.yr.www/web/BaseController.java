@@ -42,24 +42,33 @@ public class BaseController {
 
 
     @RequestMapping("/login")
-    public String login(TravelUser user,HttpSession session,HttpServletRequest request ,ModelAndView modelAndView){
+    public ModelAndView login(TravelUser user,HttpSession session,HttpServletRequest request ,ModelAndView modelAndView){
         TravelUser travelUser = travelUserMapper.selectOne(new TravelUser().setUserCode(user.getUserCode()));
         if (ObjectUtils.isEmpty(travelUser)){
             request.setAttribute("msg","该用户不存在，请重新登录");
-            return "sign";
+//            return "sign";
+            modelAndView.setViewName("sign");
+            return modelAndView;
         }else if (travelUser.getUserStatus().equals(EnumEnOrDis.DISABLED.getValue())){
 
             request.setAttribute("msg","该用户已被禁用，请重新登录");
-            return "sign";
+
+            modelAndView.setViewName("sign");
+            return modelAndView;
         }else if (!travelUser.getUserPassword().equals(user.getUserPassword())){
             request.setAttribute("msg","账号密码错误，请重新登录");
-            return "sign";
+
+            modelAndView.setViewName("sign");
+            return modelAndView;
         }
 
         session.setAttribute("sessionUser",travelUser);
         session.setAttribute("userType",travelUser.getUserType());
         session.setAttribute("loginState",EnumEnOrDis.DISABLED.getValue());
-        return "redirect:/";
+        modelAndView.addObject("loginState",EnumEnOrDis.DISABLED.getValue());
+//        return "redirect:/";
+        modelAndView.setViewName("index");
+        return modelAndView;
     }
 
 

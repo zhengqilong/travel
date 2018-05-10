@@ -35,7 +35,7 @@
         <div class="sidebar-content">
             <a href="#" id="toggle-sidebar"><i class="fa fa-bars"></i></a>
             <div class="sidebar-brand">
-                <a href="#">影视欣赏</a>
+                <a href="#">旅游介绍</a>
             </div>
             <div class="sidebar-header">
                 <div class="user-pic">
@@ -69,26 +69,26 @@
                 <ul>
                     <li class="header-menu"><span>目录</span></li>
                     <li class="sidebar-dropdown">
-                        <a  href="${ctx}/side1"><span>影视特效集</span></a>
+                        <a  href="${ctx}/side1"><span>热门景点</span></a>
 
                     </li>
                     <li class="sidebar-dropdown">
-                        <a href="${ctx}/side2"><span>案例应用集</span></a>
+                        <a href="${ctx}/side2"><span>攻略大全</span></a>
 
                     </li>
                     <li class="sidebar-dropdown">
-                        <a href="${ctx}/side3" ><span>影视欣赏集</span></a>
+                        <a href="${ctx}/side3" ><span>美食分享</span></a>
 
                     </li>
                     <li class="sidebar-dropdown">
-                    <a href="${ctx}/side4" ><span>特效图片集</span></a>
+                    <a href="${ctx}/side4" ><span>旅途趣事</span></a>
 
                 </li>
                     <li class="sidebar-dropdown">
-                        <a href="about.html" ><span>历史进程集</span></a>
+                        <a href="about.html" ><span>未作</span></a>
                     </li>
                     <li class="sidebar-dropdown">
-                        <a href="message.html"><span>&nbsp;&nbsp;&nbsp;留言集</span></a>
+                        <a href="message.html"><span>未作</span></a>
                         <!--<div class="sidebar-submenu">-->
                             <!--<ul>-->
                                 <!--<li><a href="#">问题1</a></li>-->
@@ -103,10 +103,10 @@
 
                         <c:choose>
                             <c:when test="${sessionScope.loginState eq 1 || empty sessionScope.loginState}">
-                                <a href="${ctx}/sign"><span>&nbsp;登录注册</span></a>
+                                <a href="${ctx}/sign"><span>登录注册</span></a>
                             </c:when>
                             <c:otherwise>
-                                <a href="${ctx}/logout"><span>&nbsp;&nbsp;&nbsp;注销</span></a>
+                                <a href="${ctx}/logout"><span>注销</span></a>
                             </c:otherwise>
                         </c:choose>
 
