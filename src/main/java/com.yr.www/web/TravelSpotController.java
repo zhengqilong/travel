@@ -4,7 +4,9 @@ package com.yr.www.web;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.sun.org.glassfish.gmbal.ParameterNames;
 import com.yr.www.entity.TravelSpot;
+import com.yr.www.entity.TravelStrategy;
 import com.yr.www.mapper.TravelSpotMapper;
+import com.yr.www.mapper.TravelStrategyMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.ObjectUtils;
@@ -34,6 +36,8 @@ import java.util.List;
 public class TravelSpotController {
     @Autowired
     private TravelSpotMapper travelSpotMapper;
+    @Autowired
+    private TravelStrategyMapper travelStrategyMapper;
 
     @RequestMapping("/spotList")
     public ModelAndView getSpotList(ModelAndView modelAndView, TravelSpot spot) {
@@ -64,6 +68,15 @@ public class TravelSpotController {
             spot1.setId(spot.getId());
             spot1.setSpotClicks(travelSpot.getSpotClicks() + 1);
             travelSpotMapper.updateById(spot1);
+
+
+
+            //项目攻略
+            TravelStrategy travelStrategy = new TravelStrategy();
+            travelStrategy.setStrSpot(travelSpot.getId());
+            List<TravelStrategy> travelStrategies = travelStrategyMapper.selectList(new EntityWrapper<>(travelStrategy));
+            travelStrategies.sort(Comparator.comparing(TravelStrategy::getStrClick).reversed());
+            modelAndView.addObject("str",travelStrategies);
         }
 
         modelAndView.setViewName("/spot/spotDetail");

@@ -6,6 +6,7 @@ import com.yr.www.entity.TravelSpot;
 import com.yr.www.entity.TravelStrategy;
 import com.yr.www.mapper.TravelStrategyMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.ObjectUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.stereotype.Controller;
@@ -52,7 +53,12 @@ private TravelStrategyMapper travelStrategyMapper;
     @RequestMapping("/strDetail")
     public ModelAndView strDetail(ModelAndView modelAndView, TravelStrategy travelStrategy){
         TravelStrategy strategy = travelStrategyMapper.selectById(travelStrategy.getId());
-        modelAndView.addObject("str",strategy);
+        if (!ObjectUtils.isEmpty(strategy)){
+            modelAndView.addObject("str",strategy);
+            List<TravelStrategy> strategies = travelStrategyMapper.selectOther(strategy.getStrName());
+            strategies.sort(Comparator.comparing(TravelStrategy::getStrClick).reversed());
+            modelAndView.addObject("otherStr",strategies);
+        }
         modelAndView.setViewName("strategy/strategyDetail");
         return modelAndView;
     }

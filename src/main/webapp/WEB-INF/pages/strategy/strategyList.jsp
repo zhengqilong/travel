@@ -68,7 +68,7 @@
                     </div>
                     <div class="rt-right wow fadeInRight animated" data-wow-delay=".5s">
                         <h5>点赞：${str.strClick}</h5>
-                        <a href="selectroom.html" class="view">详情</a>
+                        <a href="javascript:;" onclick="strDetail(${str.id})" class="view">详情</a>
                     </div>
                     <div class="clearfix"></div>
                 </div>
@@ -76,7 +76,7 @@
         </c:forEach>
 
         <div class="room-bottom">
-            <h3>Room Types</h3>
+            <%--<h3>Room Types</h3>--%>
             <c:forEach items="${strs}" var="str" >
                 <div class="rom-btm">
                     <div class="col-md-3 room-left wow fadeInLeft animated" data-wow-delay=".5s">
@@ -89,7 +89,7 @@
                     </div>
                     <div class="col-md-3 room-right wow fadeInRight animated" data-wow-delay=".5s">
                         <h5>点赞：${str.strClick}</h5>
-                        <a href="selectroom.html" class="view">阅读详情</a>
+                        <a href="javascript:;" onclick="strDetail(${str.id})" class="view">阅读详情</a>
                     </div>
                     <div class="clearfix"></div>
                 </div>
@@ -152,6 +152,10 @@
 <script>
     function spotDetail(id) {
         window.location.href = "${ctx}/spotDetail?id="+id;
+    }
+
+    function strDetail(id) {
+        window.location.href = "${ctx}/strDetail?id="+id;
     }
 </script>
 </body>

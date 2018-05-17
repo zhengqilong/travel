@@ -8,6 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <c:set var="ctx" value="${pageContext.request.contextPath}"/>
 <!DOCTYPE HTML>
 <html>
@@ -39,7 +40,7 @@
 <div class="top-header">
     <div class="container">
         <ul class="tp-hd-lft wow fadeInLeft animated" data-wow-delay=".5s">
-            <li class="prnt"><a href="javascript:;" style="">足尖网</a></li>
+            <li class="prnt"><a href="${ctx}/" style="">足尖网</a></li>
             <li class="prnt"><a href="javascript:;" style="">/&nbsp;&nbsp;&nbsp;&nbsp;攻略详情</a></li>
 
         </ul>
@@ -70,7 +71,7 @@
                 <h3>${str.strName}</h3>
                 <ul>
                     <li><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span><fmt:formatDate value="${str.gmtCreate}" pattern="yyyy-MM-dd HH:mm:ss"/> <i>|</i></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>3 Comments</a> <i>|</i></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>1条评论</a> <i>|</i></li>
                     <li><a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>${str.strClick}</a> <i>|</i></li>
                     <li><a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>${str.strSpot}</a> <i>|</i></li>
                     <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>${str.strAuth}</a></li>
@@ -99,10 +100,8 @@
                             <img src="${ctx}/utils/images/t5.jpg" alt=" " class="img-responsive" />
                         </div>
                         <div class="recent-comments-grid-right">
-                            <h4><a href="#">Admin</a></h4>
-                            <p>To take a trivial example, which of us ever undertakes
-                                laborious physical exercise, except to obtain some advantage
-                                from it.<span>8 Hours Ago...</span></p>
+                            <h4><a href="#">张三</a></h4>
+                            <p>写的太好了<span>8小时前</span></p>
                         </div>
                         <div class="clearfix"> </div>
                     </div>
@@ -122,39 +121,19 @@
         <div class="col-md-4 blog-right">
             <div class="popular animated wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="500ms">
                 <h3>其他攻略</h3>
-                <div class="popular-grid">
-                    <div class="popular-left">
-                        <h4>01.</h4>
+                <c:forEach var="other" items="${otherStr}" begin="0" end="2" varStatus="index">
+                    <div class="popular-grid">
+                        <div class="popular-left">
+                            <h4>${index.count}</h4>
+                        </div>
+                        <div class="popular-right">
+                            <h5><a href="javascript:;" onclick="strDetail(${other.id})">${other.strName}</a></h5>
+                            <p>${fn:substring(other.strContent, 0, 6)}....<span><fmt:formatDate value="${other.gmtCreate}" pattern="yyyy-MM-dd HH:mm:ss"/></span></p>
+                        </div>
+                        <div class="clearfix"> </div>
                     </div>
-                    <div class="popular-right">
-                        <h5><a href="single1.html">deleniti atque</a></h5>
-                        <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut
-                            reiciendis.<span>1 Month Ago...</span></p>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="popular-grid">
-                    <div class="popular-left">
-                        <h4>02.</h4>
-                    </div>
-                    <div class="popular-right">
-                        <h5><a href="single1.html">sapiente delectus</a></h5>
-                        <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut
-                            reiciendis.<span>15 Days Ago...</span></p>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="popular-grid">
-                    <div class="popular-left">
-                        <h4>03.</h4>
-                    </div>
-                    <div class="popular-right">
-                        <h5><a href="single1.html">rerum hic tenetur</a></h5>
-                        <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut
-                            reiciendis.<span>5 Days Ago...</span></p>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
+                </c:forEach>
+
             </div>
         </div>
         <div class="clearfix"> </div>

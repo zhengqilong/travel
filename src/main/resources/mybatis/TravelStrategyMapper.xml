@@ -20,4 +20,7 @@
         id, str_name AS strName, str_auth AS strAuth, str_spot AS strSpot, str_click AS strClick, str_img AS strImg, str_content AS strContent, gmt_create AS gmtCreate, gmt_modify AS gmtModify
     </sql>
 
+    <select id="selectOther" resultMap="BaseResultMap">
+        SELECT * FROM  travel_strategy WHERE str_name != #{strName}
+    </select>
 </mapper>

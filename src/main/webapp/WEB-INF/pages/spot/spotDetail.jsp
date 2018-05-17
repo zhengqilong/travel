@@ -8,6 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <c:set var="ctx" value="${pageContext.request.contextPath}"/>
 <!DOCTYPE html>
 <html lang="en">
@@ -79,22 +82,25 @@
             <div class="panel">
                 <h4>相关攻略</h4>
                 <ul class="list-unstyled list-spaces">
-                    <li><a href="">Responsive Design</a><br>
-                        <span class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, laborum.</span>
-                    </li>
+                    <c:forEach var="strs" items="${str}" begin="0" end="2">
+                        <li><a href="">${strs.strName}</a><br>
+                            <span class="small text-muted">${fn:substring(strs.strContent, 0, 20)}....</span>
+                        </li>
+                    </c:forEach>
+
 
                 </ul>
                 <h4>相关美食</h4>
                 <ul class="list-unstyled list-spaces">
-                    <li><a href="">Responsive Design</a><br>
-                        <span class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, laborum.</span>
+                    <li><a href="">暂无</a><br>
+                        <span class="small text-muted">暂无</span>
                     </li>
 
                 </ul>
                 <h4>相关游记</h4>
                 <ul class="list-unstyled list-spaces">
-                    <li><a href="">Responsive Design</a><br>
-                        <span class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, laborum.</span>
+                    <li><a href="">暂无</a><br>
+                        <span class="small text-muted">暂无</span>
                     </li>
 
                 </ul>

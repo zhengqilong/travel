@@ -3,6 +3,8 @@ package com.yr.www.mapper;
 import com.yr.www.entity.TravelStrategy;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 
+import java.util.List;
+
 /**
  * <p>
  *  Mapper 接口
@@ -13,4 +15,5 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  */
 public interface TravelStrategyMapper extends BaseMapper<TravelStrategy> {
 
+    List<TravelStrategy> selectOther(String strName);
 }
