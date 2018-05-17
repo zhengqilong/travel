@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yr.www.mapper.TravelStrategyMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yr.www.entity.TravelStrategy">
+        <id column="id" property="id" />
+        <result column="str_name" property="strName" />
+        <result column="str_auth" property="strAuth" />
+        <result column="str_spot" property="strSpot" />
+        <result column="str_click" property="strClick" />
+        <result column="str_img" property="strImg" />
+        <result column="str_content" property="strContent" />
+        <result column="gmt_create" property="gmtCreate" />
+        <result column="gmt_modify" property="gmtModify" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, str_name AS strName, str_auth AS strAuth, str_spot AS strSpot, str_click AS strClick, str_img AS strImg, str_content AS strContent, gmt_create AS gmtCreate, gmt_modify AS gmtModify
+    </sql>
+
+</mapper>

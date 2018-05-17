@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yr.www.mapper.TravelSpotMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yr.www.entity.TravelSpot">
+        <id column="id" property="id" />
+        <result column="spot_name" property="spotName" />
+        <result column="spot_pro" property="spotPro" />
+        <result column="spot_city" property="spotCity" />
+        <result column="spot_area" property="spotArea" />
+        <result column="spot_clicks" property="spotClicks" />
+        <result column="spot_net" property="spotNet" />
+        <result column="spot_address" property="spotAddress" />
+        <result column="spot_info" property="spotInfo" />
+        <result column="spot_img" property="spotImg" />
+        <result column="spot_content" property="spotContent" />
+        <result column="gmt_creat" property="gmtCreat" />
+        <result column="gmt_modify" property="gmtModify" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, spot_name AS spotName, spot_pro AS spotPro, spot_city AS spotCity, spot_area AS spotArea, spot_clicks AS spotClicks, spot_net AS spotNet, spot_address AS spotAddress, spot_info AS spotInfo, spot_img AS spotImg, spot_content AS spotContent, gmt_creat AS gmtCreat, gmt_modify AS gmtModify
+    </sql>
+
+
+</mapper>
